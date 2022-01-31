@@ -1,0 +1,89 @@
+* {
+    font-family: "Nunito";
+    font-weight: 600;
+    background-color: #FFE4CF
+}
+
+:root {
+    font-size: 20px;
+}
+
+.div-master {
+    height: 100vh;
+    background-color: #FFE4CF;
+    border: 2px solid #EB7900;
+    padding: 12px;
+    padding-top: 30px;
+}
+
+h3 {
+    position: absolute;
+    top: -7px;
+    margin-top: 0px;
+    font-weight: bolder;
+}
+
+input,
+textarea {
+    border: 3px solid #00749E;
+    background-color: #FFFFFF;
+    border-radius: 5px;
+    display: block;
+    margin: 0px 0px 15px 0px;
+    height: 25px;
+    width: 200px;
+}
+
+.lb-account,
+.lb-sex {
+    display: block;
+}
+
+.check-account,
+.check-sex {
+    outline: 1px solid#00ACEB;
+    display: inline;
+    height: 16px;
+    width: 16px;
+}
+
+.inp-eyes {
+    display: inline;
+    height: 30px;
+    width: 50px;
+    margin-top: 15px;
+}
+
+.inp-photo {
+    border: none;
+    background-color: #FFE4CF;
+}
+
+.button-reset {
+    margin-top: 20px;
+    height: 40px;
+    background-color: #EB7900;
+    margin-right: 15px;
+    width: 90px;
+}
+
+.button-sub {
+    margin-top: 20px;
+    height: 40px;
+    background-color: #EB7900;
+    width: 100px;
+}
+
+.button-reset:hover {
+    background-color: #15BFEB;
+    border: 2px solid #EB7900;
+    transform: scale(1.5);
+    color: #FFE4CF;
+}
+
+.button-sub:hover {
+    background-color: #15BFEB;
+    border: 2px solid #EB7900;
+    transform: scale(1.5);
+    color: #FFE4CF;
+}

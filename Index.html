@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400;700&family=Nunito:ital,wght@0,200;0,300;0,700;1,300;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="./Styles.css" />
+    <title>Desafio 2 HTML</title>
+</head>
+
+<body>
+    <div class="div-master">
+        <form action="" method="post" enctype="multipart/form-data">
+            <!--method="post" é necessário para enviar os arquivos pessoais (por baixo dos panos) e o enctype é para fazer uploads de arquivos-->
+
+            <!--Fiieldset é usada para agrupar elementos relacionados dentro de um formulário, desenhando uma borda em torno desses elementos. Ela é especialmente útil na organização de formulários extensos. -->
+            <h3>Cadastro</h3>
+            <!--Legenda do fieldset (nome da borda)-->
+
+            <label> Nome
+                <input type="text" name="Nome" required>
+            </label>
+
+
+            <label> Email
+                <input type="email" name="email" required>
+                <!--type="email" Pede que o email tenha o @ para ser validado-->
+            </label>
+
+
+            <label> Idade
+                <input type="number" name="idade" min="12" minlength="12" style="width:40px" required>
+                <!-- min="" é o mais baixo que desce com seta - minlength é o minimo aceitado no campo do input - style="width:40px" é o tamanho que quero deixar o input -->
+            </label>
+
+
+            <label> Data de Nascimento
+                <input type="date" name="nascimento" required>
+            </label>
+
+
+            <label class="lb-account"> Onde você possui conta
+                <div>
+                    <label> <input class="check-account" type="checkbox" name="insta"> Instagram </label>
+            <!-- type="checkbox" (marcar mais de uma opção)-->
+            <label> <input class="check-account" type="checkbox" name="face">Facebook </label>
+            <label> <input class="check-account" type="checkbox" name="youtube">YouTube </label>
+    </div>
+    </label>
+
+
+    <label class="lb-sex">Sexo
+                <div>
+                    <label> <input class="check-sex" type="radio" name="opcao" value="masculino" required> Masculino
+                    </label>
+    <!--Para o type="radio" (marcar apenas UMA opção) funcionar, colocar o name das opções todas iguais-->
+    <!--Precisa ter o mesmo name pra selecionar só uma opção-->
+    <label> <input class="check-sex" type="radio" name="opcao" value="feminino" required> Feminino
+                    </label>
+    <label> <input class="check-sex" type="radio" name="opcao" value="outro" required> Outro </label>
+    </div>
+    </label>
+
+    <div>
+        <label>Cor dos olhos
+                    <input class="inp-eyes" type="color" name="cor-olhos">
+                    <!--Abre a paleta de cores-->
+                </label>
+    </div>
+
+    <label> Biografia
+                <textarea name="bio" id="" cols="22" rows="2" required></textarea>
+                <!--O REQUIRED SÓ FUNCIONA SE required></textarea ESTIVEREM SE BEIJANDO (separados não cria o campo obrigatorio)-->
+            </label>
+
+
+    <label>Foto do perfil
+                <input class="inp-photo" type="file" accept=".png, .jpg" required>
+                <!--Para aceitar mais de uma .extensão(.mp4), usar a VIRGULA (não esquecer de colocar . e a extensão)-->
+            </label>
+
+
+    <label> Telefone
+                <input type="tel" name="telefone" required>
+            </label>
+
+
+    <label> Link do perfil do Facebook
+                <input type="url" name="url-email">
+                <!--Precisa do URL completo, com o https:// (mas aceita url que não existe ex: https://www.abacate.com.br)-->
+            </label>
+
+
+    <label> Senha
+                <input type="password" name="senha" minlength="6" maxlength="8" required>
+                <!-- minlength e maxlength = Comprimento minimo e maximo, no caso aqui, minimo 6 caracteres na senha e no max 8-->
+            </label>
+
+
+    <button class="button-reset" type="reset" name="botao-limpar"> Limpar </button>
+    <!--Reset limpa tudo-->
+
+    <button class="button-sub" type="submit" name="botao-enviar" onclick=""> Enviar Dados </button>
+
+
+    </form>
+    </div>
+
+</body>
+
+
+</html>
